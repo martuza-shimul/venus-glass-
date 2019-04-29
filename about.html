@@ -1,0 +1,398 @@
+<!DOCTYPE>
+<html>
+<head>
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>VenusGlass-Leading Glass Tempering Furnace Designer</title>
+	<meta name="description" content="">	
+	<meta name="author" content="">
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- favicons	 -->
+	<!-- ===================================================== -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+	<!-- CSS
+	================================================== -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<!-- animated cd-hero -->
+
+	<!-- <link href='http://fonts.googleapis.com/css?family=Jaldi:700,400' rel='stylesheet' type='text/css'> -->
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<!-- Animation -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body class="col-sm-12 col-md-12 col-lg-12 container-fluid" style="padding:0px; margin:0px; background-color:#fff;font-family:'Open Sans',sans-serif,arial,helvetica,verdana">
+ <!-- #region Jssor Slider Begin -->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-23.1.6.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        .jssora22l.jssora22lds      (disabled)
+        .jssora22r.jssora22rds      (disabled)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+        .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
+        .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+    </style>
+	<!-- Header section starts -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-lg-12">
+				<div class="header">
+					<nav class="navbar navbar-default ">
+					  <div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      	<div class="logo">
+					      		<a class="navbar-brand" href="#"><img src="img/venuslogo.png" class="img-responsive" alt="logo" style="height: 60px;padding-left:55px;margin-top: -5px;"></a>
+					      	</div>
+					    </div>
+
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					     	<div class="menu">
+					     		<ul class="nav navbar-nav navbar-right text-uppercase">
+							        <li><a href=index.html>Home</a></li>
+							        <li><a href="about.html">About Us</a></li>
+							        <li><a href=factory.html>Our Factory</a></li>
+							        <li><a href="gallary.html">Sample Gallery</a></li>
+							        <li><a href=contact.html>QOUTATION</a></li>
+							        <li><a href=contact_us.html>Contact Us</a></li> 
+					      		</ul>
+					     	</div>
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+				</div><!-- 	End header -->
+			</div>
+		</div>
+		<!-- header section end -->
+	</div>
+<!-- Contact us page starts -->
+<!-- =================slider================== -->
+<section class="col-md-12 col-lg-12 col-sm-12">
+	<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('img/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/red.jpg" />
+                <!-- <div style="position:absolute;top:30px;left:30px;width:480px;height:120px;z-index:0;font-size:50px;color:#ffffff;line-height:60px;">VENUS GLASS</div>
+                <div style="position:absolute;top:300px;left:30px;width:480px;height:120px;z-index:0;font-size:30px;color:#ffffff;line-height:38px;">Build your Dream Home with Venus Glass</div> -->
+                <div style="position:absolute;top:120px;left:650px;width:470px;height:220px;z-index:0;">
+                    <img style="position:absolute;top:0px;left:0px;width:470px;height:220px;z-index:0;" src="img/c-phone-horizontal.png" />
+                    <div style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0; overflow:hidden;">
+                        <img data-u="caption" data-t="0" style="position:absolute;top:0px;left:0px;width:379px;height:213px;z-index:0;" src="img/c-slide-1.jpg" />
+                        <img data-u="caption" data-t="1" style="position:absolute;top:0px;left:379px;width:379px;height:213px;z-index:0;" src="img/c-slide-3.jpg" />
+                    </div>
+                    <img style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0;" src="img/c-navigator-horizontal.png" />
+                    <img data-u="caption" data-t="2" style="position:absolute;top:476px;left:454px;width:63px;height:77px;z-index:0;" src="img/hand.png" />
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/purple.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/blue.jpg" />
+            </div>
+            <a data-u="any" href="https://www.jssor.com/wordpress.html" style="display:none">wordpress gallery</a>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+</section>
+<!-- =================slider================== -->
+
+
+	<section class="container-fluid">
+		<div class="row">
+		
+		<!-- <a href="#"><img src="images/banner2.jpg" class="img-responsive"></a> -->
+			
+			
+		</div><!-- Container end -->
+    </section><!-- Parallax 2 end -->
+
+	<section class="parallax parallax2">
+		<div class="parallax-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12 col-sm-12 text-center">
+					<h2>About Us</h2>
+					<p>Venus Glass</p>
+
+<p>Venus Glass Industrial  Ltd, with several years continual development and grandness, has become a professional glass manufacture and supplier in Bangladesh. We are engaged to meet customer various need for glass. Hereby, you can find a comprehensive range of products at competitive prices and top quality, including Tempered glass, Insulated glass, Louver glass,Mirror etc. We have been seeking actively in glass field in order to create more.</p>
+
+<p>Our products sell well in Bangladesh and autonomous regions at home . The product variety has expanded to provide customers with an even wider choice of quality products for residential, architectural and decorative uses. Wide assortment of colors and customization options make it even easier to make all your glass purchasing decisions from one supplier.</p>
+
+<p>We are keeping insist as develop integrity-based, creat and keep choiceness achievement. Build up favorable brand visualize of Venus Glass, according to provide the glass to society which in high quality, beautification, environment and can saving energy as our target. With never stop, chasing perfection enterprise with all one’s heart to provide excellent quality and service. Improve the quality of human’s habitation and living, servings to harmonious society. Let’s hand in hand: surpass expectation, make the wonderful come true together.</p>
+					<p>
+						<!-- <a href="#" class="btn btn-primary white">enquire here</a>
+						<a href="#" class="btn btn-primary solid">Get In Touch</a> -->
+					</p>
+				</div>
+			</div>
+		</div><!-- Container end -->
+    </section><!-- Parallax 2 end -->
+
+	
+
+<!-- Contact us page ends -->
+	
+    <!-- Footer starts -->
+    <div class="container-fluid">
+    	<div class="footer_wrapper">
+    		<div class="row">
+    			<div class="container">
+    				<div class="footer">
+	    				<div class="col-md-9">
+	    					<div class="row">
+	    						<div class="footer_heading">
+	    							<div class="col-md-4">
+		    							<h1>Venus Glass</h1>
+		    						</div>
+		    						<div class="col-md-8">
+		    							<p>We believe in <b>Simple, Creative & Flexible</b> Design Standards with a Retina & Responsive Approach. Browse the amazing Features this template offers.</p>
+		    						</div>
+	    						</div>
+	    					</div>
+	    					<div class="row">
+	    						<div class="col-md-3">
+	    							<p><span><a href=index.html>Home</a></span></p>
+	    							<p><span><a href="about.html">About Us</a></span></p>
+	    							<p><span><a href="factory.html">Our Factory</a></span></p>
+	    							<p><span><a href="gallary.html">Simple Gallery</a></span></p>
+	    							<p><span><a href="QOUTATION">Quotation</a></span></p>
+	    							<p><span><a href="contact_us.html">Contact Us</a></span></p>
+	    						</div>
+	    						<div class="col-md-3">
+	    							<p><a href="#"><span>Blog</span></a></p>
+	    							<p><a href="#"><span>Projects</span></a></p>
+	    							<p><a href="#"><span>News</span></a></p>
+	    							<p><a href="#"><span>Partners</span></a></p>
+	    							<p><a href="#"><span>Research</span></a></p>
+	    						</div>
+	    						<div class="col-md-3">
+	    							<p><a href="#"><span>Customer Support</span></a></p>
+	    							<p><a href="#"><span>Terms of Service</span></a></p>
+	    							<p><a href="#"><span>Google Map</span></a></p>
+	    							<p><a href="#"><span>Product Info</span></a></p>
+	    							<p><a href="#"><span>Careers</span></a></p>
+	    						</div>
+	    						<div class="col-md-3">
+	    							<p><a href="#"><span>Google</span></a></p>
+	    							<p><a href="#"><span>Twitter</span></a></p>
+	    							<p><a href="#"><span>Facebook</span></a></p>
+	    							<p><a href="#"><span>Linkedin</span></a></p>
+	    							<p><a href="#"><span>Pinterest</span></a></p>
+	    							<p><a href="#"><span>Instagram</span></a></p>
+	    						</div>
+	    					</div>
+	    				</div>
+	    				<div class="col-md-3">
+	    					<div class="row">
+	    						<div class="col-md-12">
+	    							<p class="f_info">CALL US : </p>
+	    							<h3 class="f_sub_heading">+88 01716-171757</h3>
+	    						</div>
+	    					</div>
+	    					<div class="row">
+	    						<div class="col-md-12">
+	    							<p class="f_info">SEND AN EMAIL : </p>
+	    							<h3 class="f_sub_heading">venusglassbd@gmail.com</h3>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="f_copyright">
+    				<div class="col-md-12 col-sm-12 col-lg-12">
+    					<div class="container ">
+    						<div class="copy">
+    							<p>Copyrights &copy; All Rights Reserved by venusglass</p>
+    						</div>
+    						<!-- ===== -->
+    						
+    	<div class="col-md-12">
+        <div class="social-media-wrapper ">
+          <a href="#"><i class="fa fa-pinterest"></i></a>
+          <a href="#"><i class="fa fa-facebook-official"></i></a>
+          <a href="#"><i class="fa fa-google-plus-official"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+		  <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    
+    						
+    				
+    						<!-- ===== -->
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- Footer ends -->
+
+<!-- Javascript Files
+	================================================== -->
+
+	<!-- initialize jQuery Library -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Owl Carousel -->
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<!-- hero slider -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/snap.svg-min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	
+	<!-- Waypoints -->
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script> -->
+	<!-- Counter -->
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+	<!-- Custom js -->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

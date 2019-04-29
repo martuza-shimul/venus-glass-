@@ -1,0 +1,520 @@
+<!DOCTYPE>
+<html>
+<head>
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>VenusGlass-Leading Glass Tempering Furnace Designer</title>
+	<meta name="description" content="">	
+	<meta name="author" content="">
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- favicons	 -->
+	<!-- ===================================================== -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+	<!-- CSS
+	================================================== -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<!-- animated cd-hero -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Jaldi:700,400' rel='stylesheet' type='text/css'> -->
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<!-- Animation -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body style="padding:0px; margin:0px; background-color:#fff;font-family:'Open Sans',sans-serif,arial,helvetica,verdana">
+ <!-- #region Jssor Slider Begin -->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-23.1.6.mini.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        .jssora22l.jssora22lds      (disabled)
+        .jssora22r.jssora22rds      (disabled)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+        .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
+        .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+    </style>
+	<!-- Header section starts -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="header">
+					<nav class="navbar navbar-default ">
+					  <div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      	<div class="logo">
+					      		<a class="navbar-brand" href="#"><img src="img/venuslogo.png" class="img-responsive" alt="logo" style="height: 60px;padding-left:55px;margin-top: -5px;"></a>
+					      	</div>
+					    </div>
+
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					     	<div class="menu">
+					     		<ul class="nav navbar-nav navbar-right text-uppercase">
+							        <li><a href=index.html>Home</a></li>
+							        <li><a href="about.html">About Us</a></li>
+							        <li><a href=factory.html>Our Factory</a></li>
+							        <li><a href="gallary.html">Sample Gallery</a></li>
+							        <li><a href=contact.html>QOUTATION</a></li>
+							        <li><a href=contact_us.html>Contact Us</a></li>   
+					      		</ul>
+					     	</div>
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+				</div><!-- 	End header -->
+			</div>
+		</div>
+		<!-- header section end -->
+	</div>
+	<!-- factory section starts -->
+<!-- ==================slider======================= -->
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('img/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/red.jpg" />
+                <div style="position:absolute;top:30px;left:30px;width:480px;height:120px;z-index:0;font-size:50px;color:#ffffff;line-height:60px;">TOUCH SWIPE SLIDER</div>
+                <div style="position:absolute;top:300px;left:30px;width:480px;height:120px;z-index:0;font-size:30px;color:#ffffff;line-height:38px;">Build your slider with anything, includes image, content, text, html, photo, picture</div>
+                <div style="position:absolute;top:120px;left:650px;width:470px;height:220px;z-index:0;">
+                    <img style="position:absolute;top:0px;left:0px;width:470px;height:220px;z-index:0;" src="img/c-phone-horizontal.png" />
+                    <div style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0; overflow:hidden;">
+                        <img data-u="caption" data-t="0" style="position:absolute;top:0px;left:0px;width:379px;height:213px;z-index:0;" src="img/c-slide-1.jpg" />
+                        <img data-u="caption" data-t="1" style="position:absolute;top:0px;left:379px;width:379px;height:213px;z-index:0;" src="img/c-slide-3.jpg" />
+                    </div>
+                    <img style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0;" src="img/c-navigator-horizontal.png" />
+                    <img data-u="caption" data-t="2" style="position:absolute;top:476px;left:454px;width:63px;height:77px;z-index:0;" src="img/hand.png" />
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/purple.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/blue.jpg" />
+            </div>
+            <a data-u="any" href="https://www.jssor.com/wordpress.html" style="display:none">wordpress gallery</a>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+
+	<div class="container-fluid">
+		<div class="factory_wrapper">
+			<div class="row">
+			<img src="images/banner4.jpg" class="img-responsive" alt="service_image">
+				<div class="factory">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<div class="factory_heading">
+							<h1>our</h1>
+							<h3>Factory & capabilities</h3>
+							<p>
+								OUR FACTORY is our way into our GLOBAL ambition
+							</p>
+							<p>We are Big Enough to Deliver, Yet Small Enough to Care. We operate at the cutting edge of glass technology & We have a state of the art facility.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- factory section ends -->
+
+	 <!-- Parallax 2 start -->
+	<section class="parallax parallax4 factory_parallax">
+		<div class="parallax-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					
+					<div class="row">
+						<div class="factory_info">
+							<div class="col-md-3 text-right">
+								<h2>OUR <br>factory  <br>floor <br>consists <br>of</h2>
+								<!-- <h3>Factory & capabilities</h3> -->
+							</div>
+							<div class="col-md-4">
+								
+							</div>
+							<div class="col-md-5 text-left">
+								<p>Verticle polisher</p>
+								<p>Four axis CNC Machine</p>
+								<p>Automated drilling, polishing and milling</p>
+								<p>Digital Ceramic Printer</p>
+								<p>Glass temparing furnaces</p>
+							</div>
+						</div>
+					</div>
+
+					
+					
+				</div>
+			</div>
+		</div><!-- Container end -->
+    </section><!-- Parallax 2 end -->
+
+ <!-- Investment section starts -->
+
+ 	<div class="container">
+ 		<div class="investment_wrapper">
+ 			<div class="row">
+ 				<div class="investment">
+ 					<div class="col-md-4 col-md-offset-1 text-right">
+ 						<h2>We have Invested in both Machines & in People</h2>
+ 					</div>
+ 					<div class="col-md-2">
+ 						
+ 					</div>
+ 					<div class="col-md-4 text-left">
+ 						<p>We believe that all of our high-end computerised machines are as good as our operators, and our quality speaks for itself .
+						That is why we have taken all the necessary steps to set up an exemplary industry standard in the glass processing in the South Asian region.</p>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ <!-- Investment section ends -->
+
+<!-- worker section starts -->
+	
+	<div class="container-fluid">
+		<div class="worker_wrapper">
+			<div class="row">
+				<div class="worker">
+					
+					<div class="col-md-4 col-md-offset-1 ">
+						<div class="worker_content">
+							<p class="text-center">With our current  purpose-built brand new production facility and with the current  investment plans over the next two years, we want to build one of the biggest glass processing facility in the South Asia and meet the demand of the ever expanding glass market in this rapidly globalising world. Partnering with the global glass technology giant like, Saint-Gobain, Dip-Tech, Intermac, Lisec, Forel, Botero and Northglass we are in the forefront of custom build production line in Bangladesh.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-offset-1">
+						<img src="images/factory1.jpg" class="img-responsive" alt="images">
+					</div>
+				</div>
+
+
+				<div class="worker">
+					<div class="col-md-6 col-md-offset-0">
+						<img src="images/worker.jpg" class="img-responsive" alt="images">
+					</div>
+					<div class="col-md-4 col-md-offset-1 ">
+						<div class="worker_content">
+							<p class="text-center">"It is a great place to work where we do indeed feel part of the AEG family. Along with the decent payment skims here at anglo eastern glass, there is an amazing opportunity for skill development."</p>
+							<p></p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- worker section ends -->
+
+
+ <!-- Parallax 2 start -->
+	<section class="parallax parallax5 factory_parallax">
+		<div class="parallax-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 text-center">
+					
+					<div class="parallax_content">
+						<h2>OUR CNC BED SIZE IS </h2>
+						<h2>4060mm x 2300 mm</h2>
+						<h2>/(159.84"x90.5')</h2>
+
+						<h1></h1>
+						<p>With its four-axis functionality, our CNC is </p>
+						<p>one of the most technologically advanced </p> 
+						<p>and most versatile piece of glass processing</p>  
+						<p>machines available today</p> 
+					</div>
+
+					
+					
+				</div>
+			</div>
+		</div><!-- Container end -->
+    </section><!-- Parallax 2 end -->
+
+<!-- commitment section -->
+	
+	<div class="container">
+ 		<div class="commitment_wrapper">
+ 			<div class="row">
+ 				<div class="commitment">
+ 					<div class="col-md-4 col-md-offset-2 text-right">
+ 						<h2>We are Committed to Work with Exceptional Raw Material </h2>
+ 					</div>
+ 					
+ 					<div class="col-md-5 text-left">
+ 						<div class="commitment_content">
+ 							<p>We firmly believe that glass fabrication begins with exceptional raw materials and that is why we work in partnership with the world’s most reliable and high quality suppliers of float glass including St Gobain, Pilkington, PPG, Guardian, AGC & NSG. These float lines have supplied glass to the glass processors around the world for high-profile and groundbreaking international architectural projects.
+							</p>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+<!-- commitment section ends -->
+
+    <!-- Footer starts -->
+    <div class="container-fluid">
+    	<div class="footer_wrapper">
+    		<div class="row">
+    			<div class="container">
+    				<div class="footer">
+	    				<div class="col-md-9">
+	    					<div class="row">
+	    						<div class="footer_heading">
+	    							<div class="col-md-4">
+		    							<h1>venus glass</h1>
+		    						</div>
+		    						<div class="col-md-8">
+		    							<p>We believe in <b>Simple, Creative & Flexible</b> Design Standards with a Retina & Responsive Approach. Browse the amazing Features this template offers.</p>
+		    						</div>
+	    						</div>
+	    					</div>
+	    					<div class="row">
+	    						<div class="col-md-3">
+	    							<p><span><a href=index.html>Home</a></span></p>
+	    							<p><span><a href="about.html">About Us</a></span></p>
+	    							<p><span><a href="factory.html">Our Factory</a></span></p>
+	    							<p><span><a href="gallary.html">Simple Gallery</a></span></p>
+	    							<p><span><a href="QOUTATION">Quotation</a></span></p>
+	    							<p><span><a href="contact_us.html">Contact Us</a></span></p>
+	    						</div>
+	    						<div class="col-md-3">
+	    							<p><a href="#"><span>Blog</span></a></p>
+	    							<p><a href="#"><span>Projects</span></a></p>
+	    							<p><a href="#"><span>News</span></a></p>
+	    							<p><a href="#"><span>Partners</span></a></p>
+	    							<p><a href="#"><span>Research</span></a></p>
+	    						</div>
+	    						<div class="col-md-3">
+	    							<p><a href="#"><span>Customer Support</span></a></p>
+	    							<p><a href="#"><span>Terms of Service</span></a></p>
+	    							<p><a href="#"><span>Google Map</span></a></p>
+	    							<p><a href="#"><span>Product Info</span></a></p>
+	    							<p><a href="#"><span>Careers</span></a></p>
+	    						</div>
+	    						<div class="col-md-3">
+	    							<p><a href="#"><span>Google</span></a></p>
+	    							<p><a href="#"><span>Twitter</span></a></p>
+	    							<p><a href="#"><span>Facebook</span></a></p>
+	    							<p><a href="#"><span>Linkedin</span></a></p>
+	    							<p><a href="#"><span>Pinterest</span></a></p>
+	    							<p><a href="#"><span>Instagram</span></a></p>
+	    						</div>
+	    					</div>
+	    				</div>
+	    				<div class="col-md-3">
+	    					<div class="row">
+	    						<div class="col-md-12">
+	    							<p class="f_info">CALL US : </p>
+	    							<h3 class="f_sub_heading">+88 01716-171757</h3>
+	    						</div>
+	    					</div>
+	    					<div class="row">
+	    						<div class="col-md-12">
+	    							<p class="f_info">SEND AN EMAIL : </p>
+	    							<h3 class="f_sub_heading">venusglassbd@gmail.com</h3>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="f_copyright">
+    				<div class="col-md-12">
+    					<div class="container ">
+    						<div class="copy">
+    							<p>Copyrights &copy; All Rights Reserved by venusglass</p>
+    						</div>
+    						<!-- ===== -->
+    						
+    	<div class="col-md-12">
+        <div class="social-media-wrapper ">
+          <a href="#"><i class="fa fa-pinterest"></i></a>
+          <a href="#"><i class="fa fa-facebook-official"></i></a>
+          <a href="#"><i class="fa fa-google-plus-official"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+		  <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    
+    						
+    				
+    						<!-- ===== -->
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- Footer ends -->
+
+<!-- Javascript Files
+	================================================== -->
+
+	<!-- initialize jQuery Library -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Owl Carousel -->
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<!-- hero slider -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/snap.svg-min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<!-- Waypoints -->
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script> -->
+	<!-- Counter -->
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+	<!-- Custom js -->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
